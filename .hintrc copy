@@ -1,0 +1,29 @@
+{
+  "extends": [
+    "development"
+  ],
+  "hints": {
+    "axe/forms": [
+      "default",
+      {
+        "label": "off",
+        "name": "off",
+        "select-name": "off"
+      }
+    ],
+    "button-type": "off",
+    "axe/name-role-value": [
+      "off",
+      {
+        "button-name": "off"
+      }
+    ],
+    "axe/aria": [
+      "off",
+      {
+        "aria-valid-attr-value": "off"
+      }
+    ],
+    "input-button-name": "off"
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:import/recommended",
+    "plugin:import/typescript"
+  ],
+  "plugins": ["import"],
+  "rules": {
+    "import/no-unresolved": "off",
+    "import/no-restricted-paths": [
+      "error",
+      {
+        "zones": [
+          // Enforce unidirectional codebase:
+          // app can import from features but not the other way around
+          {
+            "target": "./features",
+            "from": "./app"
+          },
+
+          // features and app can import from shared modules but not the other way around
+          {
+            "target": "./components",
+            "from": ["./features", "./app"]
+          },
+          {
+            "target": "./context",
+            "from": ["./features", "./app"]
+          },
+          {
+            "target": "./database",
+            "from": ["./features", "./app"]
+          },
+          {
+            "target": "./hooks",
+            "from": ["./features", "./app"]
+          },
+          {
+            "target": "./lib",
+            "from": ["./features", "./app"]
+          },
+          {
+            "target": "./types",
+            "from": ["./features", "./app"]
+          },
+          {
+            "target": "./utils",
+            "from": ["./features", "./app"]
+          },
+
+          // Restrict cross-feature imports
+          // Example: dashboard feature cannot import from other features
+          {
+            "target": "./features/dashboard",
+            "from": [
+              "./features/drums-table",
+              "./features/inventory",
+              "./features/orders",
+              "./features/products",
+              "./features/activity"
+            ]
+          },
+
+          // Example: drums-table feature cannot import from other features
+          {
+            "target": "./features/drums-table",
+            "from": [
+              "./features/dashboard",
+              "./features/inventory",
+              "./features/orders",
+              "./features/products",
+              "./features/activity"
+            ]
+          },
+
+          // Example: inventory feature cannot import from other features
+          {
+            "target": "./features/inventory",
+            "from": [
+              "./features/dashboard",
+              "./features/drums-table",
+              "./features/orders",
+              "./features/products",
+              "./features/activity"
+            ]
+          },
+
+          {
+            "target": "features/**/*",
+            "from": "app/**/*",
+            "message": "Features should not import from app directory"
+          }
+        ]
+      }
+    ]
+  },
+  "settings": {
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx"]
+    },
+    "import/resolver": {
+      "typescript": {
+        "alwaysTryTypes": true,
+        "project": "./tsconfig.json"
+      }
+    }
+  }
+}

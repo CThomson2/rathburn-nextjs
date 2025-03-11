@@ -1,0 +1,171 @@
+name: Deploy to EC2
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch: # Allows the workflow to be manually triggered from the GitHub Actions tab
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      AWS_INSTANCE_SG_ID: ${{ secrets.AWS_INSTANCE_SG_ID }}
+      JWT_SECRET: ${{ secrets.JWT_SECRET }}
+    steps:
+      # Set up repository and environment
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # Set up Node.js (adjust the version as needed)
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "18.20"
+
+      # Build application
+      - name: Install dependencies
+        run: npm install --omit=optional
+      # Mock database URL to facilitate build process while maintaining security
+      - name: Generate Prisma client
+        run: |
+          npx prisma generate
+          echo "DATABASE_URL=***localhost:5432/dummy?schema=public" >> .env
+
+          # Debug information
+          echo "Current directory: $(pwd)"
+          echo "After Prisma generate:"
+          ls -la
+          ls -la prisma || echo "No prisma folder in dir"
+          if [ -d "prisma/generated" ]; then
+            echo "Contents of prisma/generated directory:"
+            ls -la prisma/generated
+          fi
+
+      - name: Build application and populate static assets
+        run: |
+          echo "Build environment:"
+          echo "Current directory: $(pwd)"
+          echo "Node modules structure:"
+          ls -la node_modules/.prisma || echo "No .prisma in node_modules"
+          ls -la node_modules/@prisma || echo "No @prisma in node_modules"
+          echo "Database directory structure:"
+          ls -la prisma || echo "No prisma folder in dir"
+          echo "Starting build..."
+          npm run build
+
+          # Install sharp explicitly for image optimization
+          npm install --no-save sharp
+
+          # Ensure sharp is copied to the standalone folder
+          mkdir -p .next/standalone/node_modules/sharp
+          cp -r node_modules/sharp/* .next/standalone/node_modules/sharp/
+
+          mkdir -p .next/standalone/.next/static
+          cp -r .next/static/* .next/standalone/.next/static/
+          [ -d "public" ] && cp -r public .next/standalone/ || echo "No public folder"
+
+      # Configure AWS and secure SSH access
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ secrets.AWS_REGION }}
+
+      - name: Get GitHub runner's public IP
+        id: ip
+        uses: haythem/public-ip@v1.3
+
+      - name: Log workflow modularization options
+        run: |
+          echo "Yes, you can split your workflow into two files and call one from the other using:"
+          echo "Reusable workflows: Define a workflow in one file and call it from another using uses: ./.github/workflows/other-workflow.yml"
+          echo "Composite actions: Create a custom action in .github/actions/my-action/action.yml and call it with uses: ./.github/actions/my-action"
+          echo "Both approaches allow you to modularize your workflows while maintaining the proper GitHub Actions syntax."
+      - name: Whitelist GitHub runner's IP in EC2 security group
+        run: |
+          echo "Adding IP ${{ steps.ip.outputs.ipv4 }} to security group $AWS_INSTANCE_SG_ID"
+          aws ec2 authorize-security-group-ingress \
+            --group-id $AWS_INSTANCE_SG_ID \
+            --protocol tcp \
+            --port 22 \
+            --cidr ${{ steps.ip.outputs.ipv4 }}/32
+      # First SSH connection to set up GitHub authentication
+      - name: Set up GitHub authentication on EC2
+        uses: appleboy/ssh-action@v0.1.8
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ${{ secrets.EC2_USER }}
+          key: ${{ secrets.RB_EC2_KEY }}
+          port: 22
+          command_timeout: "10m"
+          script: |
+            # Set up GitHub authentication using deploy key
+            mkdir -p ~/.ssh
+            echo "${{ secrets.REPO_DEPLOY_KEY }}" > ~/.ssh/github_deploy_key
+            chmod 600 ~/.ssh/github_deploy_key
+            # Configure SSH to use the key for GitHub
+            cat > ~/.ssh/config << EOF
+            Host github.com
+              HostName github.com
+              User git
+              IdentityFile ~/.ssh/github_deploy_key
+              IdentitiesOnly yes
+            EOF
+            # Add GitHub to known hosts to avoid prompts
+            ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
+            # Test GitHub SSH connection
+            ssh -T -o StrictHostKeyChecking=no git@github.com || echo "GitHub authentication configured"
+      # Main deployment script
+      - name: Deploy application to EC2
+        uses: appleboy/ssh-action@v0.1.8
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ${{ secrets.EC2_USER }}
+          key: ${{ secrets.RB_EC2_KEY }}
+          port: 22
+          command_timeout: "20m"
+          script: |
+            # Navigate to project directory
+            cd /home/ec2-user/rathburn-online
+            # Stop and delete PM2 process
+            pm2 stop rathburn-online || true;
+            pm2 delete rathburn-online || true;
+            # Pull latest changes from GitHub
+            git pull origin main;
+            # Install dependencies;
+            npm install --omit=optional;
+            # Run database operations;
+            npx prisma db pull && npx prisma generate;
+            # Build application;
+            npm run build;
+
+            # Install sharp explicitly for image optimization
+            npm install --no-save sharp;
+
+            # Ensure sharp is copied to the standalone folder
+            mkdir -p .next/standalone/node_modules/sharp;
+            cp -r node_modules/sharp/* .next/standalone/node_modules/sharp/;
+
+            # Copy environment and static files;
+            cp .env .next/standalone/;
+            mkdir -p .next/standalone/.next/static;
+            # Copy static files;
+            cp -r .next/static/* .next/standalone/.next/static/;
+            # Critical: Copy public folder to the correct location;
+            [ -d "public" ] && cp -r public .next/standalone/public || echo "No public folder";
+            # Critical: Ensure environment variables are available to the standalone server;
+            cp .env .next/standalone/.env;
+            # Start application with PM2;
+            pm2 start ecosystem.config.js;
+            pm2 save;
+      # Clean up - revoke temporary security group rule
+      - name: Revoke temporary IP access
+        if: always() # Run even if previous steps failed
+        run: |
+          echo "Removing IP ${{ steps.ip.outputs.ipv4 }} from security group $AWS_INSTANCE_SG_ID"
+          aws ec2 revoke-security-group-ingress \
+            --group-id $AWS_INSTANCE_SG_ID \
+            --protocol tcp \
+            --port 22 \
+            --cidr ${{ steps.ip.outputs.ipv4 }}/32
