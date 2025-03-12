@@ -284,7 +284,7 @@ const Nftdetails = () => {
                                             <p className="mb-2 text-[.9375rem] font-semibold">Creator</p>
                                             <div className="flex items-center font-semibold">
                                                 <span className="avatar avatar-xs avatar-rounded leading-none me-1"><img src="../../../assets/images/faces/9.jpg" alt="" /></span>
-                                                Json Taylor
+                                                Conrad Taylor
                                             </div>
                                         </div>
                                         <div className="xxl:col-span-5 xl:col-span-6 lg:col-span-6 md:col-span-6 sm:col-span-12 col-span-12 xxl:mt-0 mt-4">
@@ -339,7 +339,7 @@ const Nftdetails = () => {
                                                         <th scope="row" className="font-semibold text-start">
                                                             Artist Name
                                                         </th>
-                                                        <td>Json Taylor</td>
+                                                        <td>Conrad Taylor</td>
                                                     </tr>
                                                     <tr className="border-b border-defaultborder">
                                                         <th scope="row" className="font-semibold text-start">
