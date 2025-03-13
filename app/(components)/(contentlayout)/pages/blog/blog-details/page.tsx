@@ -25,7 +25,7 @@ const BlogDetails = () => {
                     </span>
                     <div>
                       <p className="mb-0 font-semibold">
-                        Conrad Thomsonn -{" "}
+                        Conrad Thomson -{" "}
                         <span className="text-[0.6875rem] text-[#8c9097] dark:text-white/50 font-normal">
                           Tue,25 Dec 2022 - 11:45
                         </span>

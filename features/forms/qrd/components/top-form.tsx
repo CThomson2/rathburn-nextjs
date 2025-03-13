@@ -48,6 +48,13 @@ const ProductionRecordSection = ({
     onChange(sectionIndex, name as keyof TopFormType, processedValue);
   };
 
+  const handleSelectChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    const { name, value } = e.target;
+    onChange(sectionIndex, name as keyof TopFormType, value);
+  };
+
+  const today = new Date().toISOString().split("T")[0]; // Format: YYYY-MM-DD
+
   return (
     <div className="col-span-12 border border-gray-300 dark:border-gray-600 relative">
       {showRemoveButton && (
@@ -61,65 +68,10 @@ const ProductionRecordSection = ({
         </button>
       )}
 
+      {/* Top row: PRODUCTION RECORD, Still, MFR */}
       <div className="grid grid-cols-12 border-b border-gray-300 dark:border-gray-600">
-        <div className="col-span-4 p-2 font-semibold border-r border-gray-300 dark:border-gray-600">
-          PRODUCTION RECORD
-        </div>
-        <div className="col-span-2 p-2 font-semibold border-r border-gray-300 dark:border-gray-600">
-          STILL
-        </div>
-        <div className="col-span-2 p-2 font-semibold"></div>
-        <div className="col-span-4 p-2 font-semibold">MFR</div>
-      </div>
-
-      <div className="grid grid-cols-12 border-b border-gray-300 dark:border-gray-600">
-        <div className="col-span-2 p-2 font-semibold border-r border-gray-300 dark:border-gray-600">
-          Material
-        </div>
         <div className="col-span-4 p-2 border-r border-gray-300 dark:border-gray-600">
-          <input
-            type="text"
-            className="form-control w-full"
-            value={formData.material || ""}
-            aria-label="Material"
-            placeholder="Material"
-            name="material"
-            onChange={handleInputChange}
-          />
-        </div>
-        <div className="col-span-2 p-2 font-semibold border-r border-gray-300 dark:border-gray-600">
-          DRUM ID
-        </div>
-        <div className="col-span-2 p-2 border-r border-gray-300 dark:border-gray-600">
-          <input
-            type="number"
-            className="form-control w-full"
-            value={formData.drum_id || ""}
-            aria-label="Drum Number"
-            placeholder="Drum #"
-            name="drum_id"
-            onChange={handleInputChange}
-          />
-        </div>
-        <div className="col-span-2 p-2 font-semibold">Date</div>
-        <div className="col-span-12 lg:col-span-0 p-2">
-          <input
-            type="date"
-            className="form-control w-full"
-            value={formData.date || ""}
-            name="date"
-            onChange={handleInputChange}
-            aria-label="Date"
-            title="Production date"
-          />
-        </div>
-      </div>
-
-      <div className="grid grid-cols-12 border-b border-gray-300 dark:border-gray-600">
-        <div className="col-span-2 p-2 font-semibold border-r border-gray-300 dark:border-gray-600">
-          Still Code
-        </div>
-        <div className="col-span-4 p-2 border-r border-gray-300 dark:border-gray-600">
+          <div className="font-semibold mb-1">Still Code</div>
           <select
             className="form-control w-full"
             value={formData.still_code || ""}
@@ -134,22 +86,62 @@ const ProductionRecordSection = ({
             <option value="C">C</option>
           </select>
         </div>
-        <div className="col-span-2 p-2 font-semibold border-r border-gray-300 dark:border-gray-600">
-          MFR#
-        </div>
-        <div className="col-span-4 p-2">
+        <div className="col-span-8 p-2">
+          <div className="font-semibold mb-1">Manufacturer</div>
           <input
-            type="number"
+            type="text"
             className="form-control w-full"
             value={formData.manufacturer || ""}
             aria-label="Manufacturer"
-            placeholder="Manufacturer #"
+            placeholder="Univar"
             name="manufacturer"
             onChange={handleInputChange}
           />
         </div>
       </div>
 
+      {/* Second row: Material, DRUM#, Date */}
+      <div className="grid grid-cols-12 border-b border-gray-300 dark:border-gray-600">
+        <div className="col-span-4 p-2 border-r border-gray-300 dark:border-gray-600">
+          <div className="font-semibold mb-1">Material</div>
+          <input
+            type="text"
+            className="form-control w-full"
+            value={formData.material || ""}
+            aria-label="Material"
+            placeholder="Methanol"
+            name="material"
+            onChange={handleInputChange}
+          />
+        </div>
+        <div className="col-span-4 p-2 border-r border-gray-300 dark:border-gray-600">
+          <div className="font-semibold mb-1">DRUM ID</div>
+          <input
+            type="number"
+            className="form-control w-full"
+            value={`${formData.drum_id || ""}`}
+            aria-label="Drum Number"
+            placeholder="XXXXX"
+            name="drum_id"
+            onChange={handleInputChange}
+          />
+        </div>
+        <div className="col-span-4 p-2">
+          <div className="font-semibold mb-1">Date</div>
+          <input
+            type="date"
+            className="form-control w-full"
+            value={formData.date || today}
+            min={today}
+            name="date"
+            onChange={handleInputChange}
+            aria-label="Date"
+            title="Production date"
+          />
+        </div>
+      </div>
+
+      {/* Third row: Transport, Loader, Operator */}
       <div className="grid grid-cols-12">
         <div className="col-span-4 p-2 border-r border-gray-300 dark:border-gray-600">
           <div className="font-semibold mb-1">*TRANSPORT</div>
@@ -176,7 +168,7 @@ const ProductionRecordSection = ({
           />
         </div>
         <div className="col-span-4 p-2">
-          <div className="font-semibold mb-1">*OPERATOR</div>
+          <div className="font-semibold mb-1">*OPERATOR/2nd CHECK</div>
           <input
             type="text"
             className="form-control w-full"

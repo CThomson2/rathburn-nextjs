@@ -9,7 +9,7 @@ const Reviews = () => {
     {
       id: 1,
       src: "../../assets/images/faces/15.jpg",
-      name: "Conrad Thomsonn",
+      name: "Conrad Thomson",
       title: "CEO OF NORJA",
       class: "half-fill",
       text: "12 days ago",

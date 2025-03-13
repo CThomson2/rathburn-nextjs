@@ -24,6 +24,9 @@ const ProductionRecord = () => {
   const [isGeneratingPDF, setIsGeneratingPDF] = useState(false);
   const formRef = useRef<HTMLDivElement>(null);
 
+  // Get today's date in YYYY-MM-DD format for default values
+  const today = new Date().toISOString().split("T")[0];
+
   // Form data state with updated structure
   const [formData, setFormData] = useState({
     // TopForm sections as an array
@@ -34,7 +37,7 @@ const ProductionRecord = () => {
         material: "",
         drum_id: 0,
         still_code: "",
-        date: "",
+        date: today, // Initialize with today's date
         transporter: "",
         loader: "",
         operator: "",
@@ -52,8 +55,8 @@ const ProductionRecord = () => {
         label_count: 0,
         labels_destroyed: 0,
         labels_remaining: 0,
-        created_at: "",
-        updated_at: "",
+        created_at: today, // Initialize with today's date
+        updated_at: today, // Initialize with today's date
       } as BatchFormType,
     ],
 
@@ -62,9 +65,9 @@ const ProductionRecord = () => {
 
     // BottomForm data
     bottomData: {
-      start_date: "",
-      loading_date: "",
-      completion_date: "",
+      start_date: today, // Initialize with today's date
+      loading_date: today, // Initialize with today's date
+      completion_date: today, // Initialize with today's date
       start_temp: 0,
       cleaning_req: false,
       vented: false,
@@ -84,7 +87,7 @@ const ProductionRecord = () => {
       const newTopSections = [...prevData.topSections];
 
       // For numerical fields, convert string value to number
-      if (field === "manufacturer" || field === "drum_id") {
+      if (field === "drum_id") {
         newTopSections[sectionIndex] = {
           ...newTopSections[sectionIndex],
           [field]: value === "" ? 0 : Number(value),
@@ -115,7 +118,7 @@ const ProductionRecord = () => {
         material: "ACETONITRILE",
         drum_id: 0,
         still_code: "",
-        date: "",
+        date: today, // Set default date for new sections
         transporter: "",
         loader: "",
         operator: "",
@@ -195,8 +198,8 @@ const ProductionRecord = () => {
         label_count: 0,
         labels_destroyed: 0,
         labels_remaining: 0,
-        created_at: "",
-        updated_at: "",
+        created_at: today, // Initialize with today's date
+        updated_at: today, // Initialize with today's date
       };
 
       return {
@@ -404,7 +407,7 @@ const ProductionRecord = () => {
           material: "ACETONITRILE 1st PROCESS",
           drum_id: 0,
           still_code: "",
-          date: "",
+          date: today, // Reset with today's date
           transporter: "",
           loader: "",
           operator: "",
@@ -420,15 +423,15 @@ const ProductionRecord = () => {
           label_count: 0,
           labels_destroyed: 0,
           labels_remaining: 0,
-          created_at: "",
-          updated_at: "",
+          created_at: today, // Reset with today's date
+          updated_at: today, // Reset with today's date
         } as BatchFormType,
       ],
       totalLiters: "",
       bottomData: {
-        start_date: "",
-        loading_date: "",
-        completion_date: "",
+        start_date: today, // Reset with today's date
+        loading_date: today, // Reset with today's date
+        completion_date: today, // Reset with today's date
         start_temp: 0,
         cleaning_req: false,
         vented: false,

@@ -23,7 +23,7 @@ const Signupbasic = () => {
                     className="desktop-logo"
                   />
                   <img
-                    src="../../../assets/images/brand-logos/rathburn-logo.png"
+                    src="../../../assets/logo-pack/rathburn-banner.png"
                     alt="logo"
                     className="desktop-dark"
                   />

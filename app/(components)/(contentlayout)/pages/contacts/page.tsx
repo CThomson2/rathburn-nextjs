@@ -903,7 +903,7 @@ const Contacts = () => {
                   <div className="avatar avatar-xl avatar-rounded me-3">
                     <img src="../../assets/images/faces/21.jpg" alt="" />
                   </div>
-                  <div>ThomsonThomson
+                  <div>
                     <h6 className="text-[1rem] mb-1 font-semibold">
                       Samantha Melon
                     </h6>
@@ -2170,10 +2170,10 @@ const Contacts = () => {
                   </div>
                   <div>
                     <h6 className="text-[1rem] mb-1 font-semibold">
-                      Conrad Thomsonn
+                      Conrad Thomson
                     </h6>
                     <p className="mb-1 text-[#8c9097] dark:text-white/50 contact-mail text-truncate">
-                      jsonThomsonn@gmail.com
+                      jsonThomson@gmail.com
                     </p>
                     <p className="font-semibold text-[0.6875rem] mb-0 !text-primary">
                       +1(555) 234 2452

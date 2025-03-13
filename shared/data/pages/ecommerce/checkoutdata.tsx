@@ -433,7 +433,6 @@ export class Basicwizard extends React.Component<{}, State> {
                     <div className="form-floating">
                       <input
                         type="text"
-                        ThomsonThomson
                         className="form-control  w-full !rounded-md"
                         id="country-add"
                         defaultValue="USA"

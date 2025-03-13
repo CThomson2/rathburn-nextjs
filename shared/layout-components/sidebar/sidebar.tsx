@@ -761,7 +761,7 @@ const Sidebar = ({ local_varaiable, ThemeChanger }: any) => {
             <img
               src={`${
                 process.env.NODE_ENV === "production" ? basePath : ""
-              }/assets/images/brand-logos/rathburn-logo.png`}
+              }/assets/logo-pack/rathburn-banner.png`}
               alt="logo"
               className="main-logo desktop-dark"
             />

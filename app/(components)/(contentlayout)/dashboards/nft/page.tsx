@@ -414,7 +414,7 @@ const Nft = () => {
                       This Week
                     </Link>
                   </li>
-                  <li>ThomsonThomson
+                  <li>
                     <Link
                       className="ti-dropdown-item !py-2 !px-[0.9375rem] !text-[0.8125rem] !font-medium block"
                       href="#!"
@@ -600,11 +600,11 @@ const Nft = () => {
                           </div>
                           <div className="items-center">
                             <p className="mb-0 font-semibold">
-                              Conrad Thomsonn
+                              Conrad Thomson
                               <i className="bi bi-patch-check-fill text-success ms-2"></i>
                             </p>
                             <span className="text-[0.75rem] text-[#8c9097] dark:text-white/50">
-                              @jsonThomsonn
+                              @jsonThomson
                             </span>
                           </div>
                         </div>
@@ -857,7 +857,7 @@ const Nft = () => {
                   className="ti-btn-group !border-0 !text-xs !py-2 !px-3 ti-btn-primary"
                 >
                   1W
-                </button>ThomsonThomson
+                </button>
                 <button
                   type="button"
                   className="ti-btn-group !border-0 !text-xs !py-2 !px-3 ti-btn-primary"
@@ -1292,7 +1292,7 @@ const Nft = () => {
                           </Link>
                         </p>
                         <p className="text-[#8c9097] dark:text-white/50 text-[0.75rem] mb-0">
-                          @Thomsonn
+                          @Thomson
                         </p>
                       </div>
                     </div>

@@ -83,7 +83,7 @@ const Taskdetails = () => {
                       </span>
                     </div>
                     <span className="block text-[.875rem] dark:text-defaulttextcolor/70 font-semibold">
-                      H.J.Thomsonn
+                      H.J.Thomson
                     </span>
                   </div>
                 </div>

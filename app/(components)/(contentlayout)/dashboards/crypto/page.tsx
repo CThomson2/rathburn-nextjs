@@ -1193,7 +1193,7 @@ const Crypto = () => {
                         </span>
                       </div>
                       <div>
-                        <p className="mb-0 font-semibold">Conrad Thomsonn</p>
+                        <p className="mb-0 font-semibold">Conrad Thomson</p>
                         <p className="mb-0 text-[#8c9097] dark:text-white/50 text-[0.75rem]">
                           Bought 0.008213 Bitcoin using ****9808
                         </p>

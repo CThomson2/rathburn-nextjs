@@ -147,7 +147,7 @@ const Mailapp = () => {
                             type="email"
                             className="form-control"
                             id="fromMail"
-                            defaultValue="jsonThomsonn2345@gmail.com"
+                            defaultValue="jsonThomson2345@gmail.com"
                           />
                         </div>
                         <div className="xl:col-span-6 col-span-12 mb-2">
@@ -240,9 +240,9 @@ const Mailapp = () => {
                 </span>
               </div>
               <div className="ms-2">
-                <p className="font-semibold mb-0 text-white">Conrad Thomsonn</p>
+                <p className="font-semibold mb-0 text-white">Conrad Thomson</p>
                 <p className="text-white opacity-[0.7] text-[.6875rem] mb-0">
-                  jsonThomsonn1992@gmail.com
+                  jsonThomson1992@gmail.com
                 </p>
               </div>
             </div>
@@ -752,7 +752,7 @@ const Mailapp = () => {
               </div>
               <div className="main-mail-content mb-6">
                 <p className="text-[.875rem] font-semibold mb-4">
-                  Hi, Conrad Thomsonn Greetings 🖐
+                  Hi, Conrad Thomson Greetings 🖐
                 </p>
                 <p className="mb-2 text-[0.75rem] text-[#8c9097] dark:text-white/50">
                   Earth, our home, is the third planet from the sun. While

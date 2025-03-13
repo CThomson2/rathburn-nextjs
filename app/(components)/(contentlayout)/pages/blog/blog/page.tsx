@@ -50,7 +50,7 @@ const Blog = () => {
                               className="shadow-none ring-transparent avatar avatar-sm !rounded-full me-2"
                             />
                             <div className="font-semibold">
-                              Conrad Thomsonn -{" "}
+                              Conrad Thomson -{" "}
                               <span className="text-[.6875rem] opacity-70 font-normal">
                                 12,Dec 2022 - 04:34PM
                               </span>

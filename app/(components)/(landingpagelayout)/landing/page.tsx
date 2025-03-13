@@ -695,7 +695,6 @@ const Landing = ({ local_varaiable, ThemeChanger }: any) => {
                   <div className="box-body">
                     <div className="items-start">
                       <div className="mb-2">
-                        ThomsonThomson
                         <span className="avatar avatar-lg avatar-rounded bg-primary/10 !text-primary">
                           <i className="bx bx-cloud-upload text-[1.5625rem]"></i>
                         </span>
@@ -931,7 +930,7 @@ const Landing = ({ local_varaiable, ThemeChanger }: any) => {
                       </span>
                       <div>
                         <p className="mb-0 font-semibold text-[0.875rem]">
-                          Conrad Thomsonn
+                          Conrad Thomson
                         </p>
                         <p className="mb-0 text-[0.625rem] font-semibold text-[#8c9097] dark:text-white/50">
                           CEO OF NORJA
@@ -960,7 +959,7 @@ const Landing = ({ local_varaiable, ThemeChanger }: any) => {
                       <div className="ltr:float-right rtl:float-left text-[0.75rem] font-semibold text-[#8c9097] dark:text-white/50 text-end">
                         <span>12 days ago</span>
                         <span className="block font-normal text-[0.75rem] text-success">
-                          <i>Conrad Thomsonn</i>
+                          <i>Conrad Thomson</i>
                         </span>
                       </div>
                     </div>
@@ -1023,7 +1022,6 @@ const Landing = ({ local_varaiable, ThemeChanger }: any) => {
                         <p className="mb-0 font-semibold text-[0.875rem]">
                           Kiara Advain
                         </p>
-                        ThomsonThomson
                         <p className="mb-0 text-[0.625rem] font-semibold text-[#8c9097] dark:text-white/50">
                           CEO OF EMPIRO
                         </p>
@@ -1414,7 +1412,7 @@ const Landing = ({ local_varaiable, ThemeChanger }: any) => {
                       <img src="../assets/images/faces/5.jpg" alt="" />
                     </span>
                     <p className="font-semibold text-[1.0625rem] mb-0 text-default">
-                      Conrad Thomsonn
+                      Conrad Thomson
                     </p>
                     <span className="text-[#8c9097] dark:text-white/50 text-[0.875rem] !text-primary font-semibold">
                       Web Designer
@@ -3301,7 +3299,7 @@ const Landing = ({ local_varaiable, ThemeChanger }: any) => {
                   <p className="font-semibold mb-4">
                     <Link aria-label="anchor" href="/dashboards/crm/">
                       <img
-                        src="../assets/images/brand-logos/rathburn-logo.png"
+                        src="../assets/logo-pack/rathburn-banner.png"
                         alt=""
                       />
                     </Link>
