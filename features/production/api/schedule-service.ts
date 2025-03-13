@@ -50,7 +50,7 @@ export const generateDistillationPDF = async (
   distillationId: number
 ): Promise<string | null> => {
   try {
-    const response = await fetch("/api/pdf/production-schedule", {
+    const response = await fetch("/api/pdf/generate/production-schedule", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

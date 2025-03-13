@@ -365,7 +365,7 @@ const ProductionRecord = () => {
       console.log("Sending form data to server:", formData);
 
       // Call the server API endpoint
-      const response = await fetch("/api/pdf/generate", {
+      const response = await fetch("/api/pdf/generate/qrd", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

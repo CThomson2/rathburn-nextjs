@@ -114,6 +114,7 @@ export async function POST(req: NextRequest) {
     await page.pdf({
       path: pdfPath,
       format: "A4",
+      landscape: true,
       printBackground: true,
       margin: {
         top: "10mm",
@@ -126,6 +127,7 @@ export async function POST(req: NextRequest) {
     await browser.close();
 
     // Return the PDF URL to the client
+    // TODO: Add PDF to section in File Manager page
     const pdfUrl = `/pdfs/${filename}`;
 
     return NextResponse.json({

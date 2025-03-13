@@ -12,7 +12,7 @@ export default function Home() {
 
   const [err, setError] = useState("");
   const [data, setData] = useState({
-    email: "adminnextjs@gmail.com",
+    email: "admin@rathburn.app",
     password: "1234567890",
   });
   const { email, password } = data;
@@ -34,15 +34,12 @@ export default function Home() {
   };
 
   const Login1 = (_e: any) => {
-    if (
-      data.email == "adminnextjs@gmail.com" &&
-      data.password == "1234567890"
-    ) {
+    if (data.email == "admin@rathburn.app" && data.password == "1234567890") {
       RouteChange();
     } else {
       setError("The Auction details did not Match");
       setData({
-        email: "adminnextjs@gmail.com",
+        email: "admin@rathburn.app",
         password: "1234567890",
       });
     }
