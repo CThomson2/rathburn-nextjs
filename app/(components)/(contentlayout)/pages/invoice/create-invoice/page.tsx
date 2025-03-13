@@ -61,7 +61,7 @@ const Createinvoice = () => {
               <div className="h5 mb-0 sm:flex block items-center">
                 <div>
                   <img
-                    src="../../../assets/images/brand-logos/toggle-logo.png"
+                    src="../../../assets/logo-pack/icon-transparent.png"
                     alt=""
                   />
                 </div>

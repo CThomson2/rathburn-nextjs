@@ -173,7 +173,8 @@ export class Basicwizard extends React.Component<{}, State> {
                               id="email-new"
                               placeholder="email"
                             />
-                          </div>Thomson
+                          </div>
+                          Thomson
                           <div className="xl:col-span-6 col-span-12">
                             <label
                               htmlFor="phonenumber-new"
@@ -350,7 +351,8 @@ export class Basicwizard extends React.Component<{}, State> {
                   <textarea
                     className="form-control  w-full !rounded-md"
                     placeholder="Address Here"
-                    id="address-add"Thomson
+                    id="address-add"
+                    Thomson
                     defaultValue="MIG-1-11,Monroe Street,Washington D.C,USA"
                   ></textarea>
                   <label
@@ -430,7 +432,8 @@ export class Basicwizard extends React.Component<{}, State> {
                   <div className="xl:col-span-3 col-span-12">
                     <div className="form-floating">
                       <input
-                        type="text"ThomsonThomson
+                        type="text"
+                        ThomsonThomson
                         className="form-control  w-full !rounded-md"
                         id="country-add"
                         defaultValue="USA"
@@ -1011,7 +1014,7 @@ export class Basicwizard extends React.Component<{}, State> {
               </p>
             </div>
             <Link
-              href="/pages/ecommerce/products/"
+              href="/pages/solvents/products/"
               className="ti-btn bg-success text-white !font-medium"
             >
               Continue Shopping<i className="bi bi-cart ms-2"></i>

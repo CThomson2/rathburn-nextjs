@@ -244,12 +244,12 @@ export const MenuItems: any = [
       //   title: "Contact-Us",
       // },
       {
-        title: "Ecommerce",
+        title: "Solvents",
         type: "sub",
         active: false,
         children: [
           {
-            path: "/pages/ecommerce/add-products",
+            path: "/pages/solvents/add-products",
             type: "link",
             active: false,
             selected: false,
@@ -257,7 +257,7 @@ export const MenuItems: any = [
             title: "Add Products",
           },
           {
-            path: "/pages/ecommerce/cart",
+            path: "/pages/solvents/cart",
             type: "link",
             active: false,
             selected: false,
@@ -265,7 +265,7 @@ export const MenuItems: any = [
             title: "Cart",
           },
           {
-            path: "/pages/ecommerce/checkout",
+            path: "/pages/solvents/checkout",
             type: "link",
             active: false,
             selected: false,
@@ -273,7 +273,7 @@ export const MenuItems: any = [
             title: "Checkout",
           },
           {
-            path: "/pages/ecommerce/edit-products",
+            path: "/pages/solvents/edit-products",
             type: "link",
             active: false,
             selected: false,
@@ -281,7 +281,7 @@ export const MenuItems: any = [
             title: "Edit Products",
           },
           {
-            path: "/pages/ecommerce/order-details",
+            path: "/pages/solvents/order-details",
             type: "link",
             active: false,
             selected: false,
@@ -289,7 +289,7 @@ export const MenuItems: any = [
             title: "Order Details",
           },
           {
-            path: "/pages/ecommerce/orders",
+            path: "/pages/solvents/orders",
             type: "link",
             active: false,
             selected: false,
@@ -297,7 +297,7 @@ export const MenuItems: any = [
             title: "Orders",
           },
           {
-            path: "/pages/ecommerce/products",
+            path: "/pages/solvents/products",
             type: "link",
             active: false,
             selected: false,
@@ -305,7 +305,7 @@ export const MenuItems: any = [
             title: "Products",
           },
           {
-            path: "/pages/ecommerce/product-details",
+            path: "/pages/solvents/product-details",
             type: "link",
             active: false,
             selected: false,
@@ -313,7 +313,7 @@ export const MenuItems: any = [
             title: "Product Details",
           },
           {
-            path: "/pages/ecommerce/product-list",
+            path: "/pages/solvents/product-list",
             type: "link",
             active: false,
             selected: false,
@@ -321,7 +321,7 @@ export const MenuItems: any = [
             title: "Products List",
           },
           {
-            path: "/pages/ecommerce/wishlist",
+            path: "/pages/solvents/wishlist",
             type: "link",
             active: false,
             selected: false,

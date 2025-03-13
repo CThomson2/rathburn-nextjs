@@ -427,7 +427,7 @@ const Header = ({ local_varaiable, ThemeChanger }: any) => {
                     <img
                       src={`${
                         process.env.NODE_ENV === "production" ? basePath : ""
-                      }/assets/images/brand-logos/toggle-logo.png`}
+                      }/assets/logo-pack/icon-transparent.png`}
                       alt="logo"
                       className="toggle-logo"
                     />
@@ -708,7 +708,7 @@ const Header = ({ local_varaiable, ThemeChanger }: any) => {
                           <div className="grow">
                             <div className="flex items-start justify-between mb-0">
                               <div className="mb-0 !text-[0.8125rem] text-defaulttextcolor dark:text-white font-semibold ">
-                                <Link href="/pages/ecommerce/cart/">
+                                <Link href="/pages/solvents/cart/">
                                   {idx.name}
                                 </Link>
                               </div>
@@ -748,7 +748,7 @@ const Header = ({ local_varaiable, ThemeChanger }: any) => {
                   >
                     <div className="grid">
                       <Link
-                        href="/pages/ecommerce/checkout/"
+                        href="/pages/solvents/checkout/"
                         className="w-full ti-btn ti-btn-primary-full p-2"
                       >
                         Proceed to checkout
@@ -771,7 +771,7 @@ const Header = ({ local_varaiable, ThemeChanger }: any) => {
                         Add some items to make me happy :)
                       </span>
                       <Link
-                        href="/pages/ecommerce/products/"
+                        href="/pages/solvents/products/"
                         className="ti-btn ti-btn-primary btn-wave ti-btn-wave btn-sm m-1 !text-[0.75rem] !py-[0.25rem] !px-[0.5rem]"
                         data-abc="true"
                       >

@@ -24,7 +24,7 @@ const Invoicedetails = () => {
               <div className="h5 mb-0 sm:flex bllock items-center">
                 <div className="avatar avatar-sm">
                   <img
-                    src="../../../assets/images/brand-logos/toggle-logo.png"
+                    src="../../../assets/logo-pack/icon-transparent.png"
                     alt=""
                   />
                 </div>

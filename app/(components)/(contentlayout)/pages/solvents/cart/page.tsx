@@ -167,7 +167,7 @@ const Cart = ({ local_varaiable }:any) => {
                                                 <td>
                                                     <div className="flex items-center">
                                                         <div className="hs-tooltip ti-main-tooltip ltr:[--placement:left] rtl:[--placement:right]">
-                                                            <Link href="/pages/ecommerce/wishlist/" type="button" className="hs-tooltip-toggle ti-btn ti-btn-icon bg-success text-white !font-medium me-1">
+                                                            <Link href="/pages/solvents/wishlist/" type="button" className="hs-tooltip-toggle ti-btn ti-btn-icon bg-success text-white !font-medium me-1">
                                                                 <i className="ri-heart-line"></i>
                                                                 <span
                                                                     className="hs-tooltip-content  ti-main-tooltip-content py-1 px-2 !bg-black !text-xs !font-medium !text-white shadow-sm "
@@ -261,8 +261,8 @@ const Cart = ({ local_varaiable }:any) => {
                                 </div>
                             </div>
                             <div className="p-4 grid">
-                                <Link href="/pages/ecommerce/checkout/" className="ti-btn bg-primary  text-white !font-medium !mb-2">Proceed To Checkout</Link>
-                                <Link href="/pages/ecommerce/products/" className="ti-btn bg-light  !font-medium">Continue Shopping</Link>
+                                <Link href="/pages/solvents/checkout/" className="ti-btn bg-primary  text-white !font-medium !mb-2">Proceed To Checkout</Link>
+                                <Link href="/pages/solvents/products/" className="ti-btn bg-light  !font-medium">Continue Shopping</Link>
                             </div>
                         </div>
                     </div>
