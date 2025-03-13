@@ -16,3 +16,6 @@
 /cache
 
 /public
+
+# Local deployment files
+/ecosystem.config.js
