@@ -172,7 +172,7 @@ const Jobslanding = ({ local_varaiable, ThemeChanger }: any) => {
               <div className="horizontal-logo">
                 <Link href="/dashboards/crm/" className="header-logo">
                   <img
-                    src="../assets/images/brand-logos/toggle-logo.png"
+                    src="../assets/logo-pack/icon-transparent.png"
                     alt="logo"
                     className="toggle-logo"
                   />
@@ -2261,11 +2261,12 @@ const Jobslanding = ({ local_varaiable, ThemeChanger }: any) => {
                   {" "}
                   © Copyright 2024 <span id="year"></span>{" "}
                   <Link
-                    href="#!"
+                    href="https://rathburn.co.uk"
+                    target="_blank"
                     scroll={false}
                     className="text-primary text-[0.9375rem] font-semibold"
                   >
-                    Ynex
+                    Rathburn
                   </Link>
                   .
                 </span>

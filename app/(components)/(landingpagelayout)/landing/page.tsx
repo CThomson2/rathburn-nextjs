@@ -219,7 +219,7 @@ const Landing = ({ local_varaiable, ThemeChanger }: any) => {
               <div className="horizontal-logo">
                 <Link href="/dashboards/crm/" className="header-logo">
                   <img
-                    src="../assets/images/brand-logos/toggle-logo.png"
+                    src="../assets/logo-pack/icon-transparent.png"
                     alt="logo"
                     className="toggle-logo"
                   />
