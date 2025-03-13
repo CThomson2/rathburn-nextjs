@@ -73,23 +73,24 @@ export const MenuItems: any = [
         type: "link",
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         title: "CRM",
       },
       {
-        path: "/dashboards/ecommerce",
+        path: "/dashboards/drums",
+        badgetxt: badge1,
         type: "link",
         active: false,
         selected: false,
-        dirchange: false, 
-        title: "Ecommerce",
+        dirchange: false,
+        title: "Drums",
       },
       {
         path: "/dashboards/crypto",
         type: "link",
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         title: "Crypto",
       },
       {
@@ -97,7 +98,7 @@ export const MenuItems: any = [
         type: "link",
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         title: "Jobs",
       },
       {
@@ -105,7 +106,7 @@ export const MenuItems: any = [
         type: "link",
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         title: "NFT",
       },
       {
@@ -113,7 +114,7 @@ export const MenuItems: any = [
         type: "link",
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         title: "Sales",
       },
       {
@@ -121,7 +122,7 @@ export const MenuItems: any = [
         type: "link",
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         title: "Analytics",
       },
       {
@@ -129,7 +130,7 @@ export const MenuItems: any = [
         type: "link",
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         title: "Projects",
       },
       {
@@ -137,7 +138,7 @@ export const MenuItems: any = [
         type: "link",
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         title: "HRM",
       },
       {
@@ -145,7 +146,7 @@ export const MenuItems: any = [
         type: "link",
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         title: "Stocks",
       },
       {
@@ -153,7 +154,7 @@ export const MenuItems: any = [
         type: "link",
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         title: "Courses",
       },
       {
@@ -161,7 +162,7 @@ export const MenuItems: any = [
         type: "link",
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         title: "Personal",
       },
     ],
@@ -184,7 +185,7 @@ export const MenuItems: any = [
         type: "link",
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         title: "About Us",
       },
       {
@@ -197,7 +198,7 @@ export const MenuItems: any = [
             type: "link",
             active: false,
             selected: false,
-            dirchange: false, 
+            dirchange: false,
             title: "Blog",
           },
           {
@@ -205,7 +206,7 @@ export const MenuItems: any = [
             type: "link",
             active: false,
             selected: false,
-            dirchange: false, 
+            dirchange: false,
             title: "Blog-Details",
           },
           {
@@ -213,7 +214,7 @@ export const MenuItems: any = [
             type: "link",
             active: false,
             selected: false,
-            dirchange: false, 
+            dirchange: false,
             title: "Create-Blog",
           },
         ],
@@ -223,7 +224,7 @@ export const MenuItems: any = [
         type: "link",
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         title: "Chat",
       },
       {
@@ -231,7 +232,7 @@ export const MenuItems: any = [
         type: "link",
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         title: "Contacts",
       },
       {
@@ -239,7 +240,7 @@ export const MenuItems: any = [
         type: "link",
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         title: "Contact-Us",
       },
       {
@@ -252,7 +253,7 @@ export const MenuItems: any = [
             type: "link",
             active: false,
             selected: false,
-            dirchange: false, 
+            dirchange: false,
             title: "Add Products",
           },
           {
@@ -260,7 +261,7 @@ export const MenuItems: any = [
             type: "link",
             active: false,
             selected: false,
-            dirchange: false, 
+            dirchange: false,
             title: "Cart",
           },
           {
@@ -268,7 +269,7 @@ export const MenuItems: any = [
             type: "link",
             active: false,
             selected: false,
-            dirchange: false, 
+            dirchange: false,
             title: "Checkout",
           },
           {
@@ -276,7 +277,7 @@ export const MenuItems: any = [
             type: "link",
             active: false,
             selected: false,
-            dirchange: false, 
+            dirchange: false,
             title: "Edit Products",
           },
           {
@@ -284,7 +285,7 @@ export const MenuItems: any = [
             type: "link",
             active: false,
             selected: false,
-            dirchange: false, 
+            dirchange: false,
             title: "Order Details",
           },
           {
@@ -292,7 +293,7 @@ export const MenuItems: any = [
             type: "link",
             active: false,
             selected: false,
-            dirchange: false, 
+            dirchange: false,
             title: "Orders",
           },
           {
@@ -300,7 +301,7 @@ export const MenuItems: any = [
             type: "link",
             active: false,
             selected: false,
-            dirchange: false, 
+            dirchange: false,
             title: "Products",
           },
           {
@@ -308,7 +309,7 @@ export const MenuItems: any = [
             type: "link",
             active: false,
             selected: false,
-            dirchange: false, 
+            dirchange: false,
             title: "Product Details",
           },
           {
@@ -316,7 +317,7 @@ export const MenuItems: any = [
             type: "link",
             active: false,
             selected: false,
-            dirchange: false, 
+            dirchange: false,
             title: "Products List",
           },
           {
@@ -324,7 +325,7 @@ export const MenuItems: any = [
             type: "link",
             active: false,
             selected: false,
-            dirchange: false, 
+            dirchange: false,
             title: "Wishlist",
           },
         ],
@@ -339,7 +340,7 @@ export const MenuItems: any = [
             type: "link",
             active: false,
             selected: false,
-            dirchange: false, 
+            dirchange: false,
             title: "Mail-App",
           },
           {
@@ -347,7 +348,7 @@ export const MenuItems: any = [
             type: "link",
             active: false,
             selected: false,
-            dirchange: false, 
+            dirchange: false,
             title: "Mail-Settings",
           },
         ],
@@ -357,7 +358,7 @@ export const MenuItems: any = [
         type: "link",
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         title: "Empty",
       },
       {
@@ -365,7 +366,7 @@ export const MenuItems: any = [
         type: "link",
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         title: "FAQ's",
       },
       {
@@ -374,14 +375,14 @@ export const MenuItems: any = [
         menusub: true,
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         children: [
           {
             path: "/pages/filemanager",
             type: "link",
             active: false,
             selected: false,
-            dirchange: false, 
+            dirchange: false,
             title: "File Manager",
           },
         ],
@@ -392,14 +393,14 @@ export const MenuItems: any = [
         menusub: true,
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         children: [
           {
             path: "/pages/invoice/create-invoice",
             type: "link",
             active: false,
             selected: false,
-            dirchange: false, 
+            dirchange: false,
             title: "Create Invoice",
           },
           {
@@ -407,7 +408,7 @@ export const MenuItems: any = [
             type: "link",
             active: false,
             selected: false,
-            dirchange: false, 
+            dirchange: false,
             title: "Invoice Details",
           },
           {
@@ -415,7 +416,7 @@ export const MenuItems: any = [
             type: "link",
             active: false,
             selected: false,
-            dirchange: false, 
+            dirchange: false,
             title: "Invoice List",
           },
         ],
@@ -425,7 +426,7 @@ export const MenuItems: any = [
         type: "link",
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         title: "Landing",
       },
       {
@@ -434,7 +435,7 @@ export const MenuItems: any = [
         type: "link",
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         title: "Jobs Landing",
       },
       {
@@ -442,7 +443,7 @@ export const MenuItems: any = [
         type: "link",
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         title: "Notifications",
       },
       {
@@ -450,7 +451,7 @@ export const MenuItems: any = [
         type: "link",
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         title: "Pricing",
       },
       {
@@ -458,7 +459,7 @@ export const MenuItems: any = [
         type: "link",
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         title: "Profile",
       },
       {
@@ -466,7 +467,7 @@ export const MenuItems: any = [
         type: "link",
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         title: "Reviews",
       },
       {
@@ -474,7 +475,7 @@ export const MenuItems: any = [
         type: "link",
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         title: "Team",
       },
       {
@@ -482,7 +483,7 @@ export const MenuItems: any = [
         type: "link",
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         title: "Terms & Conditions",
       },
       {
@@ -490,7 +491,7 @@ export const MenuItems: any = [
         type: "link",
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         title: "Timeline",
       },
       {
@@ -498,7 +499,7 @@ export const MenuItems: any = [
         type: "link",
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         title: "To Do List",
       },
     ],
@@ -510,14 +511,14 @@ export const MenuItems: any = [
     type: "sub",
     active: false,
     selected: false,
-    dirchange: false, 
+    dirchange: false,
     children: [
       {
         path: "/task/kanban-board",
         type: "link",
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         title: "Kanban Board",
       },
       {
@@ -525,7 +526,7 @@ export const MenuItems: any = [
         type: "link",
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         title: "List View",
       },
       {
@@ -533,7 +534,7 @@ export const MenuItems: any = [
         type: "link",
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         title: "Task Details",
       },
     ],
@@ -544,14 +545,14 @@ export const MenuItems: any = [
     type: "sub",
     active: false,
     selected: false,
-    dirchange: false, 
+    dirchange: false,
     children: [
       {
         path: "/authentication/coming-soon",
         type: "link",
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         title: "Coming Soon",
       },
 
@@ -561,14 +562,14 @@ export const MenuItems: any = [
         menusub: true,
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         children: [
           {
             path: "/authentication/create-password/create-basic",
             type: "link",
             active: false,
             selected: false,
-            dirchange: false, 
+            dirchange: false,
             title: "Basic",
           },
           {
@@ -576,7 +577,7 @@ export const MenuItems: any = [
             type: "link",
             active: false,
             selected: false,
-            dirchange: false, 
+            dirchange: false,
             title: "Cover",
           },
         ],
@@ -587,14 +588,14 @@ export const MenuItems: any = [
         menusub: true,
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         children: [
           {
             path: "/authentication/lock-screen/screen-basic",
             type: "link",
             active: false,
             selected: false,
-            dirchange: false, 
+            dirchange: false,
             title: "Basic",
           },
           {
@@ -602,7 +603,7 @@ export const MenuItems: any = [
             type: "link",
             active: false,
             selected: false,
-            dirchange: false, 
+            dirchange: false,
             title: "Cover",
           },
         ],
@@ -613,14 +614,14 @@ export const MenuItems: any = [
         menusub: true,
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         children: [
           {
             path: "/authentication/reset-password/reset-basic",
             type: "link",
             active: false,
             selected: false,
-            dirchange: false, 
+            dirchange: false,
             title: "Basic",
           },
           {
@@ -628,7 +629,7 @@ export const MenuItems: any = [
             type: "link",
             active: false,
             selected: false,
-            dirchange: false, 
+            dirchange: false,
             title: "Cover",
           },
         ],
@@ -639,14 +640,14 @@ export const MenuItems: any = [
         menusub: true,
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         children: [
           {
             path: "/authentication/sign-up/signup-basic",
             type: "link",
             active: false,
             selected: false,
-            dirchange: false, 
+            dirchange: false,
             title: "Basic",
           },
           {
@@ -654,7 +655,7 @@ export const MenuItems: any = [
             type: "link",
             active: false,
             selected: false,
-            dirchange: false, 
+            dirchange: false,
             title: "Cover",
           },
         ],
@@ -665,14 +666,14 @@ export const MenuItems: any = [
         menusub: true,
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         children: [
           {
             path: "/authentication/sign-in/signin-basic",
             type: "link",
             active: false,
             selected: false,
-            dirchange: false, 
+            dirchange: false,
             title: "Basic",
           },
           {
@@ -680,7 +681,7 @@ export const MenuItems: any = [
             type: "link",
             active: false,
             selected: false,
-            dirchange: false, 
+            dirchange: false,
             title: "Cover",
           },
         ],
@@ -691,14 +692,14 @@ export const MenuItems: any = [
         menusub: true,
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         children: [
           {
             path: "/authentication/two-step-verification/two-basic",
             type: "link",
             active: false,
             selected: false,
-            dirchange: false, 
+            dirchange: false,
             title: "Basic",
           },
           {
@@ -706,7 +707,7 @@ export const MenuItems: any = [
             type: "link",
             active: false,
             selected: false,
-            dirchange: false, 
+            dirchange: false,
             title: "Cover",
           },
         ],
@@ -716,7 +717,7 @@ export const MenuItems: any = [
         type: "link",
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         title: "Under Maintainance",
       },
     ],
@@ -727,14 +728,14 @@ export const MenuItems: any = [
     type: "sub",
     active: false,
     selected: false,
-    dirchange: false, 
+    dirchange: false,
     children: [
       {
         path: "/error/error-401",
         type: "link",
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         title: "401-Error",
       },
       {
@@ -742,7 +743,7 @@ export const MenuItems: any = [
         type: "link",
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         title: "404-Error",
       },
       {
@@ -750,7 +751,7 @@ export const MenuItems: any = [
         type: "link",
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         title: "500-Error",
       },
     ],
@@ -765,14 +766,14 @@ export const MenuItems: any = [
     type: "sub",
     active: false,
     selected: false,
-    dirchange: false, 
+    dirchange: false,
     children: [
       {
         path: "/ui-elements/alerts",
         type: "link",
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         title: "Alerts",
       },
       {
@@ -780,7 +781,7 @@ export const MenuItems: any = [
         type: "link",
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         title: "Badge",
       },
       {
@@ -788,7 +789,7 @@ export const MenuItems: any = [
         type: "link",
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         title: "Breadcrumb",
       },
       {
@@ -796,7 +797,7 @@ export const MenuItems: any = [
         type: "link",
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         title: "Buttons",
       },
       {
@@ -804,7 +805,7 @@ export const MenuItems: any = [
         type: "link",
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         title: "Button Group",
       },
       {
@@ -812,7 +813,7 @@ export const MenuItems: any = [
         type: "link",
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         title: "Blockquotes",
       },
       {
@@ -820,7 +821,7 @@ export const MenuItems: any = [
         type: "link",
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         title: "Cards",
       },
       {
@@ -828,7 +829,7 @@ export const MenuItems: any = [
         type: "link",
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         title: "Dropdowns",
       },
       {
@@ -836,7 +837,7 @@ export const MenuItems: any = [
         type: "link",
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         title: "Images & Figures",
       },
       {
@@ -844,7 +845,7 @@ export const MenuItems: any = [
         type: "link",
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         title: "List Group",
       },
       {
@@ -852,7 +853,7 @@ export const MenuItems: any = [
         type: "link",
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         title: "Navs & Tabs",
       },
       {
@@ -860,7 +861,7 @@ export const MenuItems: any = [
         type: "link",
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         title: "Object Fit",
       },
       {
@@ -868,7 +869,7 @@ export const MenuItems: any = [
         type: "link",
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         title: "Pagination",
       },
       {
@@ -876,7 +877,7 @@ export const MenuItems: any = [
         type: "link",
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         title: "Popovers",
       },
       {
@@ -884,7 +885,7 @@ export const MenuItems: any = [
         type: "link",
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         title: "Progress",
       },
       {
@@ -892,7 +893,7 @@ export const MenuItems: any = [
         type: "link",
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         title: "Indicators",
       },
       {
@@ -900,7 +901,7 @@ export const MenuItems: any = [
         type: "link",
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         title: "Spinners",
       },
       {
@@ -908,7 +909,7 @@ export const MenuItems: any = [
         type: "link",
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         title: "Toasts",
       },
       {
@@ -916,7 +917,7 @@ export const MenuItems: any = [
         type: "link",
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         title: "Tooltips",
       },
     ],
@@ -927,14 +928,14 @@ export const MenuItems: any = [
     type: "sub",
     active: false,
     selected: false,
-    dirchange: false, 
+    dirchange: false,
     children: [
       {
         path: "/utilities/avatars",
         type: "link",
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         title: "Avatars",
       },
       {
@@ -942,7 +943,7 @@ export const MenuItems: any = [
         type: "link",
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         title: "Borders",
       },
       {
@@ -950,7 +951,7 @@ export const MenuItems: any = [
         type: "link",
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         title: "Colors",
       },
       {
@@ -958,7 +959,7 @@ export const MenuItems: any = [
         type: "link",
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         title: "Grids",
       },
       {
@@ -966,7 +967,7 @@ export const MenuItems: any = [
         type: "link",
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         title: "Flex",
       },
       {
@@ -974,7 +975,7 @@ export const MenuItems: any = [
         type: "link",
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         title: "Columns",
       },
       {
@@ -982,7 +983,7 @@ export const MenuItems: any = [
         type: "link",
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         title: "Typography",
       },
     ],
@@ -993,7 +994,7 @@ export const MenuItems: any = [
     type: "sub",
     active: false,
     selected: false,
-    dirchange: false, 
+    dirchange: false,
     children: [
       {
         title: "Form Elements",
@@ -1001,14 +1002,14 @@ export const MenuItems: any = [
         menusub: true,
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         children: [
           {
             path: "/forms/formelements/inputs",
             type: "link",
             active: false,
             selected: false,
-            dirchange: false, 
+            dirchange: false,
             title: "Inputs",
           },
           {
@@ -1016,7 +1017,7 @@ export const MenuItems: any = [
             type: "link",
             active: false,
             selected: false,
-            dirchange: false, 
+            dirchange: false,
             title: "checks & Radios ",
           },
           {
@@ -1024,7 +1025,7 @@ export const MenuItems: any = [
             type: "link",
             active: false,
             selected: false,
-            dirchange: false, 
+            dirchange: false,
             title: "Form switch",
           },
           {
@@ -1032,7 +1033,7 @@ export const MenuItems: any = [
             type: "link",
             active: false,
             selected: false,
-            dirchange: false, 
+            dirchange: false,
             title: "Input Group",
           },
           {
@@ -1040,7 +1041,7 @@ export const MenuItems: any = [
             type: "link",
             active: false,
             selected: false,
-            dirchange: false, 
+            dirchange: false,
             title: "Form select",
           },
           {
@@ -1048,7 +1049,7 @@ export const MenuItems: any = [
             type: "link",
             active: false,
             selected: false,
-            dirchange: false, 
+            dirchange: false,
             title: "Range Slider",
           },
           {
@@ -1056,7 +1057,7 @@ export const MenuItems: any = [
             type: "link",
             active: false,
             selected: false,
-            dirchange: false, 
+            dirchange: false,
             title: "File Uploads",
           },
           {
@@ -1064,7 +1065,7 @@ export const MenuItems: any = [
             type: "link",
             active: false,
             selected: false,
-            dirchange: false, 
+            dirchange: false,
             title: "Date,Time Picker",
           },
           {
@@ -1072,7 +1073,7 @@ export const MenuItems: any = [
             type: "link",
             active: false,
             selected: false,
-            dirchange: false, 
+            dirchange: false,
             title: "Color Pickers",
           },
           {
@@ -1080,7 +1081,7 @@ export const MenuItems: any = [
             type: "link",
             active: false,
             selected: false,
-            dirchange: false, 
+            dirchange: false,
             title: "Advanced Select",
           },
           {
@@ -1088,7 +1089,7 @@ export const MenuItems: any = [
             type: "link",
             active: false,
             selected: false,
-            dirchange: false, 
+            dirchange: false,
             title: "Input Number",
           },
           {
@@ -1096,7 +1097,7 @@ export const MenuItems: any = [
             type: "link",
             active: false,
             selected: false,
-            dirchange: false, 
+            dirchange: false,
             title: "Passwords",
           },
           {
@@ -1104,7 +1105,7 @@ export const MenuItems: any = [
             type: "link",
             active: false,
             selected: false,
-            dirchange: false, 
+            dirchange: false,
             title: "Counters & Markup",
           },
         ],
@@ -1114,7 +1115,7 @@ export const MenuItems: any = [
         type: "link",
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         title: "Form Layouts",
       },
       {
@@ -1123,14 +1124,14 @@ export const MenuItems: any = [
         menusub: true,
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         children: [
           {
             path: "/forms/formeditors",
             type: "link",
             active: false,
             selected: false,
-            dirchange: false, 
+            dirchange: false,
             title: "Quill Editors",
           },
         ],
@@ -1140,7 +1141,7 @@ export const MenuItems: any = [
         type: "link",
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         title: "Validation",
       },
       {
@@ -1148,7 +1149,7 @@ export const MenuItems: any = [
         type: "link",
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         title: "Select2",
       },
     ],
@@ -1159,14 +1160,14 @@ export const MenuItems: any = [
     type: "sub",
     active: false,
     selected: false,
-    dirchange: false, 
+    dirchange: false,
     children: [
       {
         path: "/advanced-ui/accordions&collapse",
         type: "link",
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         title: "Accordions & collapse",
       },
       {
@@ -1174,7 +1175,7 @@ export const MenuItems: any = [
         type: "link",
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         title: "Custom scrollbar",
       },
       {
@@ -1182,7 +1183,7 @@ export const MenuItems: any = [
         type: "link",
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         title: "Draggable Cards",
       },
       {
@@ -1190,7 +1191,7 @@ export const MenuItems: any = [
         type: "link",
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         title: "Modals & Closes",
       },
       {
@@ -1198,7 +1199,7 @@ export const MenuItems: any = [
         type: "link",
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         title: "Navbar",
       },
       {
@@ -1206,7 +1207,7 @@ export const MenuItems: any = [
         type: "link",
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         title: "Offcanvas",
       },
       {
@@ -1214,7 +1215,7 @@ export const MenuItems: any = [
         type: "link",
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         title: "Ratings",
       },
       {
@@ -1222,7 +1223,7 @@ export const MenuItems: any = [
         type: "link",
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         title: "Swiper JS",
       },
       {
@@ -1230,7 +1231,7 @@ export const MenuItems: any = [
         type: "link",
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         title: "Stepper",
       },
     ],
@@ -1243,7 +1244,7 @@ export const MenuItems: any = [
     type: "link",
     active: false,
     selected: false,
-    dirchange: false, 
+    dirchange: false,
   },
 
   {
@@ -1256,14 +1257,14 @@ export const MenuItems: any = [
     badgetxt: badge1,
     active: false,
     selected: false,
-    dirchange: false, 
+    dirchange: false,
     children: [
       {
         path: "/apps/full-calendar",
         type: "link",
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         title: "Full Calendar",
       },
       {
@@ -1271,7 +1272,7 @@ export const MenuItems: any = [
         type: "link",
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         title: "Gallery",
       },
       {
@@ -1280,14 +1281,14 @@ export const MenuItems: any = [
         menusub: true,
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         children: [
           {
             path: "/apps/projects/project-list",
             type: "link",
             active: false,
             selected: false,
-            dirchange: false, 
+            dirchange: false,
             title: "Project List",
           },
           {
@@ -1295,7 +1296,7 @@ export const MenuItems: any = [
             type: "link",
             active: false,
             selected: false,
-            dirchange: false, 
+            dirchange: false,
             title: "Project Overview",
           },
           {
@@ -1303,7 +1304,7 @@ export const MenuItems: any = [
             type: "link",
             active: false,
             selected: false,
-            dirchange: false, 
+            dirchange: false,
             title: "Create Project",
           },
         ],
@@ -1314,14 +1315,14 @@ export const MenuItems: any = [
         menusub: true,
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         children: [
           {
             path: "/apps/jobs/job-details",
             type: "link",
             active: false,
             selected: false,
-            dirchange: false, 
+            dirchange: false,
             title: "Job Details",
           },
           {
@@ -1329,7 +1330,7 @@ export const MenuItems: any = [
             type: "link",
             active: false,
             selected: false,
-            dirchange: false, 
+            dirchange: false,
             title: "Search Company",
           },
           {
@@ -1337,7 +1338,7 @@ export const MenuItems: any = [
             type: "link",
             active: false,
             selected: false,
-            dirchange: false, 
+            dirchange: false,
             title: "Search Jobs",
           },
           {
@@ -1345,7 +1346,7 @@ export const MenuItems: any = [
             type: "link",
             active: false,
             selected: false,
-            dirchange: false, 
+            dirchange: false,
             title: " Job Post",
           },
           {
@@ -1353,7 +1354,7 @@ export const MenuItems: any = [
             type: "link",
             active: false,
             selected: false,
-            dirchange: false, 
+            dirchange: false,
             title: " Jobs List",
           },
           {
@@ -1361,7 +1362,7 @@ export const MenuItems: any = [
             type: "link",
             active: false,
             selected: false,
-            dirchange: false, 
+            dirchange: false,
             title: " Search Candidate",
           },
           {
@@ -1369,7 +1370,7 @@ export const MenuItems: any = [
             type: "link",
             active: false,
             selected: false,
-            dirchange: false, 
+            dirchange: false,
             title: "Candidate details",
           },
         ],
@@ -1380,14 +1381,14 @@ export const MenuItems: any = [
         menusub: true,
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         children: [
           {
             path: "/apps/nft/market-place",
             type: "link",
             active: false,
             selected: false,
-            dirchange: false, 
+            dirchange: false,
             title: "Market Place",
           },
           {
@@ -1395,7 +1396,7 @@ export const MenuItems: any = [
             type: "link",
             active: false,
             selected: false,
-            dirchange: false, 
+            dirchange: false,
             title: "NFT Details",
           },
           {
@@ -1403,7 +1404,7 @@ export const MenuItems: any = [
             type: "link",
             active: false,
             selected: false,
-            dirchange: false, 
+            dirchange: false,
             title: "Create NFT",
           },
           {
@@ -1411,7 +1412,7 @@ export const MenuItems: any = [
             type: "link",
             active: false,
             selected: false,
-            dirchange: false, 
+            dirchange: false,
             title: " Wallet Integration",
           },
           {
@@ -1419,7 +1420,7 @@ export const MenuItems: any = [
             type: "link",
             active: false,
             selected: false,
-            dirchange: false, 
+            dirchange: false,
             title: "Live Auction",
           },
         ],
@@ -1430,14 +1431,14 @@ export const MenuItems: any = [
         menusub: true,
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         children: [
           {
             path: "/apps/crm/contacts",
             type: "link",
             active: false,
             selected: false,
-            dirchange: false, 
+            dirchange: false,
             title: "Contacts",
           },
           {
@@ -1445,7 +1446,7 @@ export const MenuItems: any = [
             type: "link",
             active: false,
             selected: false,
-            dirchange: false, 
+            dirchange: false,
             title: "Companies",
           },
           {
@@ -1453,7 +1454,7 @@ export const MenuItems: any = [
             type: "link",
             active: false,
             selected: false,
-            dirchange: false, 
+            dirchange: false,
             title: "Deals",
           },
           {
@@ -1461,7 +1462,7 @@ export const MenuItems: any = [
             type: "link",
             active: false,
             selected: false,
-            dirchange: false, 
+            dirchange: false,
             title: " Leads",
           },
         ],
@@ -1472,14 +1473,14 @@ export const MenuItems: any = [
         menusub: true,
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         children: [
           {
             path: "/apps/crypto/transactions",
             type: "link",
             active: false,
             selected: false,
-            dirchange: false, 
+            dirchange: false,
             title: "Transactions",
           },
           {
@@ -1487,7 +1488,7 @@ export const MenuItems: any = [
             type: "link",
             active: false,
             selected: false,
-            dirchange: false, 
+            dirchange: false,
             title: "Currency Exchanges",
           },
           {
@@ -1495,7 +1496,7 @@ export const MenuItems: any = [
             type: "link",
             active: false,
             selected: false,
-            dirchange: false, 
+            dirchange: false,
             title: "Buy & Sell",
           },
           {
@@ -1503,7 +1504,7 @@ export const MenuItems: any = [
             type: "link",
             active: false,
             selected: false,
-            dirchange: false, 
+            dirchange: false,
             title: " Marketcap",
           },
           {
@@ -1511,7 +1512,7 @@ export const MenuItems: any = [
             type: "link",
             active: false,
             selected: false,
-            dirchange: false, 
+            dirchange: false,
             title: "Wallet",
           },
         ],
@@ -1531,7 +1532,7 @@ export const MenuItems: any = [
         type: "empty",
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
       },
 
       {
@@ -1539,14 +1540,14 @@ export const MenuItems: any = [
         type: "sub",
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         children: [
           {
             path: "",
             type: "empty",
             active: false,
             selected: false,
-            dirchange: false, 
+            dirchange: false,
             title: "Nested-2-1",
           },
           {
@@ -1554,7 +1555,7 @@ export const MenuItems: any = [
             type: "empty",
             ctive: false,
             selected: false,
-            dirchange: false, 
+            dirchange: false,
             title: "Nested-2-2",
           },
           {
@@ -1562,7 +1563,7 @@ export const MenuItems: any = [
             type: "empty",
             active: false,
             selected: false,
-            dirchange: false, 
+            dirchange: false,
             title: "Nested-2-3",
           },
         ],
@@ -1581,14 +1582,14 @@ export const MenuItems: any = [
     badgetxt: badge4,
     active: false,
     selected: false,
-    dirchange: false, 
+    dirchange: false,
     children: [
       {
         path: "/tables/table",
         type: "link",
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         title: "Tables",
       },
       {
@@ -1596,7 +1597,7 @@ export const MenuItems: any = [
         type: "link",
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         title: "Grid JS Tables",
       },
       {
@@ -1604,7 +1605,7 @@ export const MenuItems: any = [
         type: "link",
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         title: "Data Tables",
       },
     ],
@@ -1623,14 +1624,14 @@ export const MenuItems: any = [
         menusub: true,
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         children: [
           {
             path: "/charts/apexcharts/line-charts",
             type: "link",
             active: false,
             selected: false,
-            dirchange: false, 
+            dirchange: false,
             title: "Line Charts",
           },
           {
@@ -1638,7 +1639,7 @@ export const MenuItems: any = [
             type: "link",
             active: false,
             selected: false,
-            dirchange: false, 
+            dirchange: false,
             title: "Area Charts ",
           },
           {
@@ -1646,7 +1647,7 @@ export const MenuItems: any = [
             type: "link",
             active: false,
             selected: false,
-            dirchange: false, 
+            dirchange: false,
             title: "Column Charts",
           },
           {
@@ -1654,7 +1655,7 @@ export const MenuItems: any = [
             type: "link",
             active: false,
             selected: false,
-            dirchange: false, 
+            dirchange: false,
             title: "Bar Charts",
           },
           {
@@ -1662,7 +1663,7 @@ export const MenuItems: any = [
             type: "link",
             active: false,
             selected: false,
-            dirchange: false, 
+            dirchange: false,
             title: "Mixed Charts",
           },
           {
@@ -1670,7 +1671,7 @@ export const MenuItems: any = [
             type: "link",
             active: false,
             selected: false,
-            dirchange: false, 
+            dirchange: false,
             title: "Range Area Charts",
           },
           {
@@ -1678,7 +1679,7 @@ export const MenuItems: any = [
             type: "link",
             active: false,
             selected: false,
-            dirchange: false, 
+            dirchange: false,
             title: "Timeline Charts",
           },
           {
@@ -1686,7 +1687,7 @@ export const MenuItems: any = [
             type: "link",
             active: false,
             selected: false,
-            dirchange: false, 
+            dirchange: false,
             title: "CandleStick Charts",
           },
           {
@@ -1694,7 +1695,7 @@ export const MenuItems: any = [
             type: "link",
             active: false,
             selected: false,
-            dirchange: false, 
+            dirchange: false,
             title: "Boxplot Charts",
           },
           {
@@ -1702,7 +1703,7 @@ export const MenuItems: any = [
             type: "link",
             active: false,
             selected: false,
-            dirchange: false, 
+            dirchange: false,
             title: "Bubble Charts",
           },
           {
@@ -1710,7 +1711,7 @@ export const MenuItems: any = [
             type: "link",
             active: false,
             selected: false,
-            dirchange: false, 
+            dirchange: false,
             title: "Scatter Charts",
           },
           {
@@ -1718,7 +1719,7 @@ export const MenuItems: any = [
             type: "link",
             active: false,
             selected: false,
-            dirchange: false, 
+            dirchange: false,
             title: "Heatmap Charts",
           },
           {
@@ -1726,7 +1727,7 @@ export const MenuItems: any = [
             type: "link",
             active: false,
             selected: false,
-            dirchange: false, 
+            dirchange: false,
             title: "Treemap Charts",
           },
           {
@@ -1734,7 +1735,7 @@ export const MenuItems: any = [
             type: "link",
             active: false,
             selected: false,
-            dirchange: false, 
+            dirchange: false,
             title: "Pie Charts",
           },
           {
@@ -1742,7 +1743,7 @@ export const MenuItems: any = [
             type: "link",
             active: false,
             selected: false,
-            dirchange: false, 
+            dirchange: false,
             title: "Radialbar Charts",
           },
           {
@@ -1750,7 +1751,7 @@ export const MenuItems: any = [
             type: "link",
             active: false,
             selected: false,
-            dirchange: false, 
+            dirchange: false,
             title: "Radar Charts",
           },
           {
@@ -1758,7 +1759,7 @@ export const MenuItems: any = [
             type: "link",
             active: false,
             selected: false,
-            dirchange: false, 
+            dirchange: false,
             title: "Polararea Charts",
           },
         ],
@@ -1768,7 +1769,7 @@ export const MenuItems: any = [
         type: "link",
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         title: "ChartJS Charts",
       },
       {
@@ -1776,7 +1777,7 @@ export const MenuItems: any = [
         type: "link",
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         title: "Echart Charts",
       },
     ],
@@ -1790,14 +1791,14 @@ export const MenuItems: any = [
     background: "hor-rightangle",
     active: false,
     selected: false,
-    dirchange: false, 
+    dirchange: false,
     children: [
       {
         path: "/maps/leaflet-map",
         type: "link",
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         title: "Leaflet Maps",
       },
       {
@@ -1805,7 +1806,7 @@ export const MenuItems: any = [
         type: "link",
         active: false,
         selected: false,
-        dirchange: false, 
+        dirchange: false,
         title: "Vector Maps",
       },
     ],
@@ -1816,7 +1817,7 @@ export const MenuItems: any = [
     type: "link",
     active: false,
     selected: false,
-    dirchange: false, 
+    dirchange: false,
     title: "Icons",
   },
 ];
