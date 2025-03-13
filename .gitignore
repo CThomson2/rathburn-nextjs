@@ -26,6 +26,8 @@ node_modules
 /public/svg
 /public/diagrams
 
+/public/
+
 # SQL queries
 /database/sql/
 /sql/

@@ -290,9 +290,9 @@ const Orderdetails = () => {
                   </span>
                 </div>
                 <div className="flex-grow">
-                  <p className="mb-0">Conrad Thomsonn</p>
+                  <p className="mb-0">Conrad Thomson</p>
                   <p className="mb-0 text-[#8c9097] dark:text-white/50 text-[0.75rem]">
-                    jsonThomsonn2135@gmail.com
+                    jsonThomson2135@gmail.com
                   </p>
                 </div>
                 <div>
@@ -367,7 +367,7 @@ const Orderdetails = () => {
                   <span className="font-semibold !text-defaulttextcolor dark:!text-defaulttextcolor/70">
                     Email :{" "}
                   </span>
-                  jsonThomsonn2134@gmail.com
+                  jsonThomson2134@gmail.com
                 </p>
               </div>
               <div className="p-4 border-b border-dashed dark:border-defaultborder/10">
@@ -455,7 +455,7 @@ const Orderdetails = () => {
                               scroll={false}
                               className="font-weight-semibold text-primary"
                             >
-                              Sansa Thomsonn
+                              Sansa Thomson
                             </Link>
                           </p>
                           <span className="text-[#8c9097] dark:text-white/50 opacity-[0.5] ps-4">

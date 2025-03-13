@@ -169,7 +169,7 @@ const Createinvoice = () => {
                             className="form-control w-full !rounded-md !bg-light"
                             id="customer-Name"
                             placeholder="Customer Name"
-                            defaultValue="Conrad Thomsonn"
+                            defaultValue="Conrad Thomson"
                           />
                         </div>
                         <div className="xl:col-span-12 col-span-12">

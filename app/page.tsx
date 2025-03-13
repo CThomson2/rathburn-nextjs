@@ -74,7 +74,7 @@ export default function Home() {
                       <img
                         src={`${
                           process.env.NODE_ENV === "production" ? basePath : ""
-                        }/assets/images/brand-logos/rathburn-logo.png`}
+                        }/assets/logo-pack/rathburn-banner.png`}
                         alt="logo"
                         className="desktop-dark"
                       />

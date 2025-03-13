@@ -1789,7 +1789,7 @@ const Searchcandidate = ({ local_varaiable }: any) => {
                     <h5 className="font-semibold mb-0 flex items-center">
                       <Link href="/apps/jobs/candidate-details/">
                         {" "}
-                        Conrad Thomsonn{" "}
+                        Conrad Thomson{" "}
                         <i
                           className="bi bi-check-circle-fill text-success text-base"
                           title="Verified candidate"

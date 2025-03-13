@@ -496,7 +496,7 @@ const Personal = () => {
                             <div className="me-2">
                               <span className="avatar avatar-rounded bg-light">
                                 <i className="bi bi-calendar2-heart text-[1rem] text-primary"></i>
-                              </span>ThomsonThomson
+                              </span>
                             </div>
                             <div className="flex-grow">
                               <span>
@@ -844,10 +844,10 @@ const Personal = () => {
                     </div>
                     <div>
                       <h5 className="font-semibold !mb-0 text-[1.25rem]">
-                        Conrad Thomsonn
+                        Conrad Thomson
                       </h5>
                       <p className="text-[.8125rem] text-[#8c9097] dark:text-white/50">
-                        jsonThomsonn345@gmail.com
+                        jsonThomson345@gmail.com
                       </p>
                     </div>
                   </div>

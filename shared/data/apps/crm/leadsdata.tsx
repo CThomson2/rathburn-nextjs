@@ -21,7 +21,7 @@ export const Laedsdata: laedsdata[] = [
     src1: "../../../assets/images/faces/4.jpg",
     src2: "../../../assets/images/company-logos/1.png",
     name: "Lisa Convay",
-    time: "24, Jul 2023 - 4:45PM",ThomsonThomson
+    time: "24, Jul 2023 - 4:45PM",
     mail: "lisaconvay2981@gmail.com",
     cell: "1678-28993-223",
     badge: "New",

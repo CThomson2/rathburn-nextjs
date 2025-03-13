@@ -139,10 +139,10 @@ const BatchSection = ({
       </div>
 
       <div className="grid grid-cols-12 border-b border-gray-300 dark:border-gray-600">
-        <div className="col-span-3 p-2 font-semibold border-r border-gray-300 dark:border-gray-600">
+        <div className="col-span-3 p-2 font-semibold border-gray-300 dark:border-gray-600">
           PO Number
         </div>
-        <div className="col-span-9 p-2">
+        <div className="col-span-8 p-2">
           <input
             type="text"
             className="form-control w-full"
@@ -156,7 +156,7 @@ const BatchSection = ({
       </div>
 
       <div className="grid grid-cols-12">
-        <div className="col-span-3 p-2 font-semibold border-r border-gray-300 dark:border-gray-600">
+        <div className="col-span-1 p-2 font-semibold border-r border-gray-300 dark:border-gray-600">
           Label Count
         </div>
         <div className="col-span-3 p-2 border-r border-gray-300 dark:border-gray-600">
@@ -170,7 +170,7 @@ const BatchSection = ({
             onChange={handleInputChange}
           />
         </div>
-        <div className="col-span-3 p-2 font-semibold border-r border-gray-300 dark:border-gray-600">
+        <div className="col-span-1 p-2 font-semibold border-r border-gray-300 dark:border-gray-600">
           Labels Destroyed
         </div>
         <div className="col-span-3 p-2">
@@ -184,19 +184,15 @@ const BatchSection = ({
             onChange={handleInputChange}
           />
         </div>
-      </div>
-
-      <div className="grid grid-cols-12 border-t border-gray-300 dark:border-gray-600">
-        <div className="col-span-3 p-2 font-semibold border-r border-gray-300 dark:border-gray-600">
+        <div className="col-span-1 p-2 font-semibold border-r border-gray-300 dark:border-gray-600">
           Labels Remaining
         </div>
-        <div className="col-span-9 p-2">
+        <div className="col-span-3 p-2">
           <input
             type="number"
             className="form-control w-full"
             value={formData.labels_remaining || ""}
             aria-label="Labels Remaining"
-            placeholder="Labels Remaining"
             name="labels_remaining"
             readOnly
           />

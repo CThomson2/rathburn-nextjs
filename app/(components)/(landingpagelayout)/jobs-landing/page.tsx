@@ -1821,7 +1821,7 @@ const Jobslanding = ({ local_varaiable, ThemeChanger }: any) => {
                       </span>
                       <div className="text-start">
                         <p className="mb-0 font-semibold text-[1rem] text-primary">
-                          Conrad Thomsonn
+                          Conrad Thomson
                         </p>
                         <p className="text-[0.625rem] mb-0 font-semibold text-[#8c9097] dark:text-white/50">
                           CEO OF NORJA
@@ -1850,7 +1850,7 @@ const Jobslanding = ({ local_varaiable, ThemeChanger }: any) => {
                       <div className="ltr:float-right rtl:float-left text-[0.75rem] font-semibold text-[#8c9097] dark:text-white/50 text-end">
                         <span>12 days ago</span>
                         <span className="block font-normal text-[0.75rem] text-success">
-                          <i>Conrad Thomsonn</i>
+                          <i>Conrad Thomson</i>
                         </span>
                       </div>
                     </div>

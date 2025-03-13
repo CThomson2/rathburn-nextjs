@@ -91,7 +91,7 @@ const Invoicedetails = () => {
                       <p className="text-[#8c9097] dark:text-white/50 mb-2">
                         Billing To :
                       </p>
-                      <p className="font-bold mb-1">Conrad Thomsonn</p>
+                      <p className="font-bold mb-1">Conrad Thomson</p>
                       <p className="text-[#8c9097] dark:text-white/50 mb-1">
                         Lig-22-1,20 Covington Place
                       </p>
@@ -99,7 +99,7 @@ const Invoicedetails = () => {
                         New Castle,de, United States,19320
                       </p>
                       <p className="text-[#8c9097] dark:text-white/50 mb-1">
-                        jsonThomsonn2134@gmail.com
+                        jsonThomson2134@gmail.com
                       </p>
                       <p className="text-[#8c9097] dark:text-white/50">
                         +1 202-918-2132
@@ -357,7 +357,7 @@ const Invoicedetails = () => {
                     <span className="font-semibold text-[#8c9097] dark:text-white/50 text-[0.75rem]">
                       Name On Card :
                     </span>{" "}
-                    Conrad Thomsonn
+                    Conrad Thomson
                   </p>
                   <p className="mb-4">
                     <span className="font-semibold text-[#8c9097] dark:text-white/50 text-[0.75rem]">

@@ -34,7 +34,7 @@ export const Liveauctiondata: live[] = [
   {
     id: 3,
     src1: "../../../assets/images/nft-images/31.png",
-    src2: "../../../assets/images/faces/5.jpg",ThomsonThomson
+    src2: "../../../assets/images/faces/5.jpg",
     name: "NFTNinja",
     heading: "Chromatic Chaos",
     text1: "@nftninja",

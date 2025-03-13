@@ -33,7 +33,7 @@ const Profile = () => {
                 <div className="flex-grow main-profile-info">
                   <div className="flex items-center !justify-between">
                     <h6 className="font-semibold mb-1 text-white text-[1rem]">
-                      Conrad Thomsonn
+                      Conrad Thomson
                     </h6>
                     <button
                       type="button"
@@ -52,7 +52,7 @@ const Profile = () => {
                       Georgia
                     </span>
                     <span className="inline-flex">
-                      <i className="ri-map-pin-line me-1 align-middle"></i>ThomsonThomson
+                      <i className="ri-map-pin-line me-1 align-middle"></i>
                       Washington D.C
                     </span>
                   </p>
@@ -74,7 +74,7 @@ const Profile = () => {
                       </p>
                     </div>
                     <div className="me-6">
-                      <p className="font-boldThomsonn[1.25rem] text-white text-shadow mb-0">
+                      <p className="font-boldThomson[1.25rem] text-white text-shadow mb-0">
                         128
                       </p>
                       <p className="mb-0 text-[.6875rem] opacity-[0.5] text-white">
@@ -90,7 +90,7 @@ const Profile = () => {
                     Professional Bio :
                   </p>
                   <p className="text-[0.75rem] text-[#8c9097] dark:text-white/50 opacity-[0.7] mb-0">
-                    I am <b className="text-defaulttextcolor">Sonya Thomsonn,</b>{" "}
+                    I am <b className="text-defaulttextcolor">Sonya Thomson,</b>{" "}
                     here by conclude that,i am the founder and managing director
                     of the prestigeous company name laugh at all and acts as the
                     cheif executieve officer of the company.
@@ -129,7 +129,7 @@ const Profile = () => {
                     <span className="avatar avatar-sm avatar-rounded me-2 bg-light text-[#8c9097] dark:text-white/50">
                       <i className="ri-mail-line align-middle text-[.875rem] text-[#8c9097] dark:text-white/50"></i>
                     </span>
-                    sonyaThomsonn2531@gmail.com
+                    sonyaThomson2531@gmail.com
                   </p>
                   <p className="mb-2">
                     <span className="avatar avatar-sm avatar-rounded me-2 bg-light text-[#8c9097] dark:text-white/50">
@@ -182,7 +182,7 @@ const Profile = () => {
                   <button
                     aria-label="button"
                     type="button"
-                    className="ti-btn ti-btn-sm ti-btn-danger me-[.375rem] mb-1"ThomsonThomson
+                    className="ti-btn ti-btn-sm ti-btn-danger me-[.375rem] mb-1"
                   >
                     <i className="ri-youtube-line font-semibold"></i>
                   </button>
@@ -303,9 +303,9 @@ const Profile = () => {
                         <div
                           className="progress-bar bg-primary w-[60%]"
                           role="progressbar"
-                          aria-valuenow={60}
-                          aria-valuemin={0}
-                          aria-valuemax={100}
+                          aria-valuenow="60"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
                         ></div>
                       </div>
                     </div>
@@ -325,7 +325,7 @@ const Profile = () => {
                                 E
                               </span>
                               <p className="mb-2">
-                                <b>You</b> Commented on <b>alexander Thomsonn</b>{" "}
+                                <b>You</b> Commented on <b>alexander Thomson</b>{" "}
                                 post{" "}
                                 <Link
                                   className="text-secondary"
