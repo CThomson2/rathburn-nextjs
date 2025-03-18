@@ -9,6 +9,9 @@ const ReactApexChart = dynamic(() => import("react-apexcharts"), {
   ssr: false,
 });
 
+/** CRM Dashboard
+ * Imports and structures all data widgets in logical layout
+ */
 const Crm = () => {
   return (
     <Fragment>
@@ -937,7 +940,7 @@ const Crm = () => {
             <div className="xxl:col-span-12 xl:col-span-6  col-span-12">
               <div className="box">
                 <div className="box-header justify-between">
-                  <div className="box-title">Deals Status</div>
+                  <div className="box-title">Drum Status</div>
                   <div className="hs-dropdown ti-dropdown">
                     <Link
                       href="#!"
@@ -999,24 +1002,32 @@ const Crm = () => {
                   <div className="flex w-full h-[0.3125rem] mb-6 rounded-full overflow-hidden">
                     <div
                       className="flex flex-col justify-center rounded-s-[0.625rem] overflow-hidden bg-primary w-[21%]"
+                      role="progressbar"
+                      title="successful"
                       aria-valuenow={21}
                       aria-valuemin={0}
                       aria-valuemax={100}
                     ></div>
                     <div
                       className="flex flex-col justify-center rounded-none overflow-hidden bg-info w-[26%]"
+                      role="progressbar"
+                      title="pending"
                       aria-valuenow={26}
                       aria-valuemin={0}
                       aria-valuemax={100}
                     ></div>
                     <div
                       className="flex flex-col justify-center rounded-none overflow-hidden bg-warning w-[35%]"
+                      role="progressbar"
+                      title="rejected"
                       aria-valuenow={35}
                       aria-valuemin={0}
                       aria-valuemax={100}
                     ></div>
                     <div
                       className="flex flex-col justify-center rounded-e-[0.625rem] overflow-hidden bg-success w-[18%]"
+                      role="progressbar"
+                      title="upcoming"
                       aria-valuenow={18}
                       aria-valuemin={0}
                       aria-valuemax={100}

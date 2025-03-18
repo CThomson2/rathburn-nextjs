@@ -20,7 +20,7 @@ export const Companydata: companydata[] = [
     src2: "../../../assets/images/company-logos/1.png",
     name: "Lisa Convay",
     time: "24, Jul 2023 - 4:45PM",
-    score: "258",Thomson
+    score: "258",
     mail: "sprukotechnologies2981@gmail.com",
     cell: "1678-28993-223",
     badge: "Corporate",

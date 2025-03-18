@@ -83,11 +83,7 @@ export const MenuItems: any = [
         active: false,
         selected: false,
         dirchange: false,
-<<<<<<< HEAD
         title: "Drums",
-=======
-        title: "Orders",
->>>>>>> 449d949 (# Start Production Schedule feature page.)
       },
       {
         path: "/dashboards/crypto",
@@ -106,7 +102,8 @@ export const MenuItems: any = [
         title: "Production",
       },
       {
-        path: "/dashboards/nft",
+        path: "/dashboards/inventory",
+        badgetxt: badge1,
         type: "link",
         active: false,
         selected: false,
