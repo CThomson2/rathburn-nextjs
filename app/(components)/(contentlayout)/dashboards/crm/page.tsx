@@ -5,6 +5,9 @@ import Link from "next/link";
 import React, { Fragment } from "react";
 import * as Crmdata from "@/shared/data/dashboards/crmdata";
 import dynamic from "next/dynamic";
+// Widgets
+import { DrumStatusWidget } from "@/features/dashboard";
+
 const ReactApexChart = dynamic(() => import("react-apexcharts"), {
   ssr: false,
 });

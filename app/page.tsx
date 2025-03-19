@@ -47,7 +47,7 @@ export default function Home() {
 
   const router = useRouter();
   const RouteChange = () => {
-    let path = "/dashboards/crm";
+    let path = "/dashboards/inventory";
     router.push(path);
   };
   return (
